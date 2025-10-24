@@ -49,19 +49,22 @@ main {
   overflow: hidden;
 }
 
-/* 🌟 CAMBIO 1: Centrado Vertical de la Imagen (Usando Flexbox en el item) */
+/* ✅ Solo la diapositiva activa usa flex */
 #carruselComidas .carousel-item {
-  height: 100%; 
-  display: flex; /* Habilita flexbox */
-  align-items: center; /* Centra verticalmente a la imagen */
-  justify-content: center; /* Centra horizontalmente a la imagen */
+  height: 100%;
+}
+
+#carruselComidas .carousel-item.active {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
 #carruselComidas .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  object-position: center; 
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 992px) {
@@ -76,32 +79,29 @@ main {
   }
 }
 
-/* Caption centrado sobre la imagen */
+/* ✅ Caption centrado sobre la imagen con fondo adaptable */
 #carruselComidas .carousel-caption {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: inline-block; 
-  max-width: 80%; 
-  background-color: rgba(0,0,0,0.5); 
-  /* 🌟 CAMBIO 2: Corrección del padding (0.5r7em -> 0.5rem) */
-  padding: 0.5rem 1rem; 
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.7rem 1rem;
   border-radius: 10px;
+  max-width: 85%;
   text-align: center;
+  color: #fff;
+  display: inline-block;
+  white-space: normal; /* permite varias líneas */
+  line-height: 1.3;
+  animation: fadeIn 0.8s ease forwards;
 }
 
 #carruselComidas .carousel-caption h5 {
   margin: 0;
   font-size: 1.5rem;
-  color: #fff;
   font-weight: 700;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-}
-
-/* Animación suave al aparecer el caption */
-#carruselComidas .carousel-item.active .carousel-caption {
-  animation: fadeIn 0.8s ease forwards;
 }
 
 @keyframes fadeIn {
@@ -120,7 +120,6 @@ main {
   background-color: rgba(0,0,0,0.5);
   border-radius: 50%;
 }
-
 
 /* ---------------------------------------------------- */
 /* ==== GRID DE COMIDAS ==== */
