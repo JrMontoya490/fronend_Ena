@@ -101,15 +101,51 @@ $comidas = $data['data'] ?? [];
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var myCarousel = document.querySelector('#carruselComidas');
-      new bootstrap.Carousel(myCarousel, {
-        interval: 3000, // tiempo entre transiciones (ms)
-        ride: 'carousel',
-        pause: 'hover' // se detiene al pasar el mouse
+document.addEventListener("DOMContentLoaded", function () {
+  // === FILTRO DE CATEGORÍAS ===
+  const buttons = document.querySelectorAll(".filter-buttons .btn");
+  const items = document.querySelectorAll(".menu-item");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Quitar clase "active" de todos los botones
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filter = button.getAttribute("data-filter");
+
+      items.forEach((item) => {
+        const category = item.getAttribute("data-category");
+
+        // Mostrar todo
+        if (filter === "all") {
+          item.classList.add("show");
+          item.classList.remove("hide");
+        } else if (category && category.toLowerCase().includes(filter.toLowerCase())) {
+          // Coincide con la categoría seleccionada
+          item.classList.add("show");
+          item.classList.remove("hide");
+        } else {
+          // Ocultar las demás
+          item.classList.add("hide");
+          item.classList.remove("show");
+        }
       });
     });
-  </script>
+  });
+
+  // === CARRUSEL AUTOMÁTICO ===
+  const myCarousel = document.querySelector("#carruselComidas");
+  if (myCarousel) {
+    new bootstrap.Carousel(myCarousel, {
+      interval: 3000, // tiempo entre transiciones (ms)
+      ride: "carousel",
+      pause: "hover" // se detiene al pasar el mouse
+    });
+  }
+});
+</script>
+
 
 </body>
 
