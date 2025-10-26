@@ -24,7 +24,7 @@
 
           <!-- QR generado (puedes reemplazar el src si prefieres usar tu propio generador) -->
           <?php
-            $menuUrl = "https://tusitio.com/archivos/menu.pdf"; // URL real de tu menú PDF
+            $menuUrl = "http://localhost/frontend/archivos/menu.pdf"; // URL real de tu menú PDF
             $qrUrl = "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=" . urlencode($menuUrl);
           ?>
           <img src="<?= $qrUrl ?>" alt="Código QR del Menú" class="img-fluid mb-3 rounded-3 border">

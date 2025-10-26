@@ -1,6 +1,6 @@
 /* ==== HEADER ==== */
 .navbar-custom {
-  background-color: #b22222 !important; /* Rojo tipo "comal" */
+  background-color: #df010e !important; /* Rojo tipo "comal" */
 }
 
 .navbar-custom .nav-link,
@@ -14,7 +14,7 @@
 
 /* ==== FOOTER ==== */
 .footer-custom {
-  background-color: #b22222;
+  background-color: #df010e;
   color: white;
   padding: 15px 0;
 }
@@ -190,9 +190,9 @@ main {
 }
 
 .filter-buttons .btn.active {
-  background-color: #b22222c9;
+  background-color: #df010e;
   color: #fff;
-  border-color: #b22222c9;
+  border-color: #df010e;
 }
 
 /* ---------------------------------------------------- */
@@ -218,7 +218,7 @@ main {
 }
 
 .card img.rounded-circle {
-  border: 3px solid #b22222;
+  border: 3px solid #df010e;
   transition: transform 0.3s ease;
 }
 
@@ -227,19 +227,19 @@ main {
 }
 
 blockquote {
-  border-left: 5px solid #b22222;
+  border-left: 5px solid #df010e;
   padding-left: 15px;
   color: #555;
 }
 
 /* ==== PÁGINA DE CONTACTO ==== */
 .card h4 {
-  color: #b22222;
+  color: #df010e;
 }
 
 .btn-danger {
-  background-color: #b22222;
-  border-color: #b22222;
+  background-color: #df010e;
+  border-color: #df010e;
 }
 
 .btn-danger:hover {

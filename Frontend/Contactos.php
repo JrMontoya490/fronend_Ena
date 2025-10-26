@@ -55,22 +55,23 @@
               <h4 class="text-danger mb-3">📍 Información</h4>
               <ul class="list-unstyled fs-6">
                 <li><strong>Dirección:</strong> Calle Principal #12, San Salvador, El Salvador</li>
-                <li><strong>Teléfono:</strong> +503 2222-3333</li>
+                <li><strong>Teléfono:</strong> +503 2522-2000</li>
                 <li><strong>Correo:</strong> contacto@elcomal.com.sv</li>
-                <li><strong>Horario:</strong> Lunes a Domingo, 7:00 a.m. - 9:00 p.m.</li>
+                <li><strong>Horario:</strong> Lunes a Sábado, 7:00 a.m. - 8:00 p.m.</li>
+                <li><strong>Horario:</strong> Domingo, 11:00 a.m. - 8:30 p.m.</li>
               </ul>
 
               <hr>
 
               <h5 class="text-danger mb-3 text-center">📱 Síguenos en redes sociales</h5>
               <div class="d-flex justify-content-center gap-4 fs-2">
-                <a href="https://www.facebook.com/tu_pagina" target="_blank" class="text-decoration-none text-primary" title="Facebook">
+                <a href="https://www.facebook.com/elcomaltipicos/?locale=es_LA" target="_blank" class="text-decoration-none text-primary" title="Facebook">
                   <i class="bi bi-facebook"></i>
                 </a>
-                <a href="https://www.instagram.com/tu_pagina" target="_blank" class="text-decoration-none text-danger" title="Instagram">
+                <a href="https://www.instagram.com/elcomalsantaelena/?hl=es" target="_blank" class="text-decoration-none text-danger" title="Instagram">
                   <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://wa.me/50370000000" target="_blank" class="text-decoration-none text-success" title="WhatsApp">
+                <a href="https://wa.me/50378210702" target="_blank" class="text-decoration-none text-success" title="WhatsApp">
                   <i class="bi bi-whatsapp"></i>
                 </a>
               </div>
@@ -79,9 +80,8 @@
 
               <h5 class="text-danger mb-3">🌎 Encuéntranos</h5>
               <div class="ratio ratio-16x9">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.611882132448!2d-89.21819158564347!3d13.69294090238676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f63302f9d1b7f5b%3A0x48d8b1ef8f46a53!2sSan%20Salvador%2C%20El%20Salvador!5e0!3m2!1ses!2ssv!4v1700000000000!5m2!1ses!2ssv"
-                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d199.72305783638615!2d-89.263783!3d13.6523885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f632fbc3b8d8489%3A0x1c7394ad03621aed!2sEl%20Comal%20Santa%20Elena!5e1!3m2!1ses!2ssv!4v1761497643612!5m2!1ses!2ssv" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                  
                 </iframe>
               </div>
             </div>
